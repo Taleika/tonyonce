@@ -2,13 +2,13 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Los 011 de Tony</title>
+  <title>Los 011 de Tony!</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="color-scheme" content="light only">
 
-  <meta property="og:title" content="Te invito a Mis Quince Años!">
-  <meta property="og:description" content="Acompáñame a celebrar mis XV en una noche inolvidable🫶">
-  <meta property="og:image" content="https://taleika.github.io/Pilixv/images/miniatura.jpg">
+  <meta property="og:title" content="Los 011 de Tony!">
+  <meta property="og:description" content="Te invito a mi cumple">
+  <meta property="og:image" content="https://taleika.github.io/tonyonce/images/miniatura.jpg">
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -16,9 +16,9 @@
   <meta property="og:type" content="website">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Te invito a Mis Quince Años!">
-  <meta name="twitter:description" content="Acompáñame a celebrar mis XV en una noche inolvidable! 🫶">
-  <meta name="twitter:image" content="https://taleika.github.io/Pilixv/images/miniatura.jpg">
+  <meta name="twitter:title" content="Los 011 de Tony!">
+  <meta name="twitter:description" content="Te invito a mi cumple">
+  <meta name="twitter:image" content="https://taleika.github.io/tonyonce/images/miniatura.jpg">
 
   <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
   <style>
@@ -68,8 +68,8 @@
     header {
       position: relative;
       width: 100%;
-      height: 100vh;
-      min-height: 500px;
+      aspect-ratio: 16 / 9;
+      max-height: 100vh;
       overflow: hidden;
       padding: 0;
       background: var(--black);
@@ -77,11 +77,12 @@
     }
 
     .hero-video {
-      position: absolute;
-      inset: 0;
+      position: relative;
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
+      object-position: center;
+      background: #000;
       filter: brightness(0.45) saturate(1.2) contrast(1.1);
     }
 
@@ -131,7 +132,6 @@
       margin: 0 auto 25px;
       animation: pulse 1.8s ease-in-out infinite;
       display: block;
-      filter: brightness(0) invert(1);
     }
     @keyframes pulse {
       0%,100%{ transform: scale(1); }
@@ -213,6 +213,7 @@
     #music-btn.playing { filter: brightness(1.2); }
 
     @media (max-width: 768px) {
+      header { aspect-ratio: 4 / 3; }
       h2 { font-size: 1.8em; }
       .countdown span { font-size: 16px; padding: 10px; min-width: 55px; }
       .icon { width: 108px; }
@@ -231,7 +232,7 @@
   </header>
 
   <section class="black-bg">
-    <h2 style="font-size:1.8em;">Veni a mi cumple 011 del otro lado</h2>
+    <h2 style="font-size:1.8em;">Vení a mi cumple 011 del otro lado</h2>
   </section>
 
   <section class="countdown-section">
@@ -245,9 +246,9 @@
   </section>
 
   <section class="red-bg">
-    <img src="images/LUCES.gif" alt="Fiesta" class="icon">
+    <img src="images/LUCES.gif" alt="Luces animadas de fiesta" class="icon">
     <h2>Fiesta</h2>
-    <p><strong>16 de Marzo de 2026</strong><br>
+    <p style="font-size:1.2em;"><strong>16 de Marzo de 2026</strong><br>
     18:00 hs a 21:00 hs<br>
     Salón Colibrí multiespacio</p>
     <a href="https://maps.app.goo.gl/ZR9GYm358X1zqLMS9" target="_blank" class="btn">Cómo llegar</a>
@@ -265,18 +266,18 @@
   <section class="red-bg">
     <h2>Confirmación de Asistencia</h2>
     <p>Cuento con tu presencia.</p>
-    <a href="https://forms.gle/KoJ2D5vWjPkszsXc7" target="_blank" class="btn">Confirmar asistencia</a>
+    <a href="https://forms.gle/M2SAqtYPPd6MRmGU8" target="_blank" class="btn">Confirmar asistencia</a>
   </section>
 
   <section class="black-bg" id="musica-section">
-    <img src="images/icono-canciones.svg" alt="Canciones" class="icon">
+    <img src="images/iconomusica.jpg" alt="Canciones" class="icon">
     <h2>¡Ayudame a elegir la música!</h2>
     <p>Podés sugerir tus canciones favoritas para la fiesta.</p>
-    <a href="https://forms.gle/sW15xdnH8HkVxya78" target="_blank" class="btn">Sugerir Canción</a>
+    <a href="https://forms.gle/fwDD6Uqyv55ctnYH9" target="_blank" class="btn">Sugerir Canción</a>
   </section>
 
   <section class="red-bg">
-    <h2>Gracias por acompañarme</h2>
+    <h2>y mucho cuidado con los demogorgons...</h2>
   </section>
 
   <div class="modal" id="modal">
